@@ -10,18 +10,21 @@ public class Kurs {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(int prodajniKurs) {
+		if(prodajniKurs<=0) throw new RuntimeException("Uneta vrednost mora biti veca od nule");
 		this.prodajniKurs = prodajniKurs;
 	}
 	public int getSrednjiKurs() {
 		return srednjiKurs;
 	}
 	public void setSrednjiKurs(int srednjiKurs) {
+		if(srednjiKurs<=0) throw new RuntimeException("Uneta vrednost mora biti veca od nule");
 		this.srednjiKurs = srednjiKurs;
 	}
 	public int getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(int kupovniKurs) {
+		if(kupovniKurs<=0) throw new RuntimeException("Uneta vrednost mora biti veca od nule");
 		this.kupovniKurs = kupovniKurs;
 	}
 	@Override
